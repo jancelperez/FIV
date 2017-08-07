@@ -91,7 +91,7 @@ module.exports = yo`
                       <div class="input-field col s12">
                         <i class="material-icons prefix fa fa-search"></i>
                         <input type="text" id="autocomplete-input" class="autocomplete">
-                        <label for="autocomplete-input">Buscar Maquina</label>
+                        <label for="autocomplete-input">Buscar Dispositivos</label>
                       </div>
                     </form> 
                   </div>
