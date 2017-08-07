@@ -15,7 +15,7 @@ page('/', function(ctx, next){
         $('.modal').modal();
         $('.slider').slider({
             indicators: false,
-            height:380
+            height:420
         });
       $('input.autocomplete').autocomplete({
         data: {
