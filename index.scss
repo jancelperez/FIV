@@ -1,0 +1,106 @@
+@import "node_modules/materialize-css/sass/materialize.scss";
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #ffffff;
+}
+
+footer{
+    background-color: #1C3643 !important;
+}
+
+#scroll{
+    // background-attachment: fixed;
+}
+.lema{
+    display: flex;  
+    justify-content: space-between;
+}
+.navegacion{
+    background-color: #1C3643;
+}
+
+.logo{
+    height: 123px;
+    padding: 0;
+    position: absolute;
+    top: -31px;
+}
+
+.login{
+    background: #8ac722;
+
+}
+.menunav{
+    height: 90px;
+}
+.cajalogo{
+    margin-bottom: 0;
+    padding-bottom: 1px;
+}
+
+.promo a{
+    color: #1C3643;
+}
+
+.fa-5x{
+    font-size: 6rem;
+}
+
+.efecto{
+    transition-duration: 700ms;
+}
+.efecto:hover{
+    transform:scale(1.7);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.color-subtitulos{
+    color: #8ac722;
+}
+
+.mision{
+    display: inline-block !important;
+    width: 50%;
+    margin-left: 20px
+}
+
+.segunda-seccion{
+    position: relative;
+}
+.segunda-seccion .subcontenido{ 
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    margin: 20px;
+    padding: 10px;
+}
+.carousel .carousel-item{
+    position: absolute;
+    top: -83px !important;
+}
+.service{
+   background-color:#fafafa;
+   padding-bottom: 0;
+   margin-bottom: -21px;
+}
+.texto{
+    color: #616161;
+    font-size: 24px;
+}
+
+.Active{
+    color:#8ac722 !important;
+}
+
+input:focus {
+    border-bottom:1px solid #8ac722 !important;
+    box-shadow: 0 1px 0 0 #8ac722 !important;
+    background-color:#F0F8FF;
+    margin-right:10px;
+}
+// *{
+//     border: solid 1px red;
+// }

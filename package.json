@@ -1,0 +1,38 @@
+{
+  "name": "fotocopiadoras_del_valle",
+  "version": "1.0.0",
+  "description": "aplicacion web ",
+  "main": "server.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp & node server.js"
+  },
+  "keywords": [
+    "aplicacion",
+    "web",
+    "fotocopiadoras",
+    "del",
+    "valle"
+  ],
+  "author": "jancel perez",
+  "license": "ISC",
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "empty-element": "^1.0.0",
+    "express": "^4.15.3",
+    "font-awesome-sass": "^4.7.0",
+    "materialize-css": "^0.99.0",
+    "page": "^1.7.1",
+    "pug": "^2.0.0-rc.2",
+    "title": "^1.0.0",
+    "yo-yo": "^1.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  }
+}
