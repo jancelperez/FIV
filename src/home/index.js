@@ -19,7 +19,7 @@ page('/', function(ctx, next){
         });
       $('input.autocomplete').autocomplete({
         data: {
-            "Fotocopiadora Ricoh": null,
+            "Fotocopiadora Ricoh": 'ricoh.jpg',
             "Fotocopiadora HP": null,
             "Fotocopiadora Epson": null,
             "Fotocopiadora Canon": 'https://placehold.it/250x250',

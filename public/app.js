@@ -2617,7 +2617,7 @@ $(function () {
     });
     $('input.autocomplete').autocomplete({
         data: {
-            "Fotocopiadora Ricoh": null,
+            "Fotocopiadora Ricoh": 'ricoh.jpg',
             "Fotocopiadora HP": null,
             "Fotocopiadora Epson": null,
             "Fotocopiadora Canon": 'https://placehold.it/250x250',
@@ -2637,6 +2637,7 @@ $(function () {
 
 },{"./plantilla":18,"empty-element":3,"page":11,"title":14}],18:[function(require,module,exports){
 var yo = require('yo-yo');
+var login = require('../login');
 
 module.exports = yo`
     <div>
@@ -2644,11 +2645,11 @@ module.exports = yo`
         <div class="navbar-fixed">
           <nav class="navegacion">
             <div class="nav-wrapper">
-              <a href="#!" class="brand-logo right-align hide-on-small-only "><img class="logo" src="logo.png" alt=""></a>
+              <a href="#!" class="brand-logo right-align"><img class="logo" src="logo.png" alt=""></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="#">| Nuestra empresa</a></li>
                 <li><a href="#">| Contactenos</a></li>
-                <li><a class="waves-effect waves-light  modal-trigger" href="#">Iniciar secion</a></li>
+                <li><a class="waves-effect waves-light  modal-trigger" href="#modal1">Iniciar secion</a></li>
               </ul>  
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>      
               <ul id="mobile-demo" class="side-nav">
@@ -2660,7 +2661,8 @@ module.exports = yo`
             </div>
           </nav>
         </div>
-      </header>    
+      </header>
+      ${login}    
       <section>
         <div class="slider">
           <ul class="slides">
@@ -2743,7 +2745,7 @@ module.exports = yo`
           </div>  
           <div class="container">
               <div class="row">  
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="fotocopiadora1.jpg">
@@ -2758,7 +2760,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="scaner1.jpg">
@@ -2773,7 +2775,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="toner1.jpg">
@@ -2788,9 +2790,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">  
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="scaner2.jpg">
@@ -2805,7 +2805,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="fotocopiadora2.jpg">
@@ -2820,7 +2820,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="toner2.jpg">
@@ -2835,9 +2835,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">  
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="toner3.jpg">
@@ -2852,7 +2850,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="scaner3.jpg">
@@ -2867,7 +2865,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="fotocopiadora3.jpg">
@@ -2882,9 +2880,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">  
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="impresora1.jpg">
@@ -2899,7 +2895,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="impresora2.jpg">
@@ -2914,7 +2910,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="impresora3.jpg">
@@ -2929,13 +2925,13 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-              </div>      
+              </div>
           </div>        
         </div>
       </section>
     </div>`;
 
-},{"yo-yo":15}],19:[function(require,module,exports){
+},{"../login":20,"yo-yo":15}],19:[function(require,module,exports){
 var page = require('page');
 
 require('./home');
@@ -2943,5 +2939,50 @@ require('./login');
 page();
 
 },{"./home":17,"./login":20,"page":11}],20:[function(require,module,exports){
+var yo = require('yo-yo');
 
-},{}]},{},[19]);
+module.exports = yo`
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <header>            
+                    <div class="navbar-fixed">
+                        <nav class="navegacion">
+                            <div class="nav-wrapper">
+                                <a href="#!" class="brand-logo"><img class="logo" src="logo.png" alt=""></a>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12 input-logo">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row password">
+                        <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                    </div>
+                </form>
+
+                <div class="container">
+                    <div class="row olivido">
+                        <a class="col s12 center-align" href="#">¿Olvide mi contraseña?</a>
+                    </div>    
+                </div>
+                <a class="bloqueado"   href="#">¿Usuario Bloqueado o Inactivo?</a>    
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="container"> 
+                <a class="btn btn-floating pulse iniciar"><i class="material-icons">person</i></a>
+            </div>
+        </div>
+    </div>`;
+// <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
+
+},{"yo-yo":15}]},{},[19]);

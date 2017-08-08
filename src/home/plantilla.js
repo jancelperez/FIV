@@ -1,16 +1,17 @@
 var yo = require('yo-yo');
+var login = require('../login')
 
-module.exports = yo`
+module.exports =yo`
     <div>
       <header>            
         <div class="navbar-fixed">
           <nav class="navegacion">
             <div class="nav-wrapper">
-              <a href="#!" class="brand-logo right-align hide-on-small-only "><img class="logo" src="logo.png" alt=""></a>
+              <a href="#!" class="brand-logo right-align"><img class="logo" src="logo.png" alt=""></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="#">| Nuestra empresa</a></li>
                 <li><a href="#">| Contactenos</a></li>
-                <li><a class="waves-effect waves-light  modal-trigger" href="#">Iniciar secion</a></li>
+                <li><a class="waves-effect waves-light  modal-trigger" href="#modal1">Iniciar secion</a></li>
               </ul>  
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>      
               <ul id="mobile-demo" class="side-nav">
@@ -22,7 +23,8 @@ module.exports = yo`
             </div>
           </nav>
         </div>
-      </header>    
+      </header>
+      ${login}    
       <section>
         <div class="slider">
           <ul class="slides">
@@ -105,7 +107,7 @@ module.exports = yo`
           </div>  
           <div class="container">
               <div class="row">  
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="fotocopiadora1.jpg">
@@ -120,7 +122,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="scaner1.jpg">
@@ -135,7 +137,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="toner1.jpg">
@@ -150,9 +152,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">  
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="scaner2.jpg">
@@ -167,7 +167,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="fotocopiadora2.jpg">
@@ -182,7 +182,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="toner2.jpg">
@@ -197,9 +197,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">  
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="toner3.jpg">
@@ -214,7 +212,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="scaner3.jpg">
@@ -229,7 +227,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="fotocopiadora3.jpg">
@@ -244,9 +242,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">  
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="impresora1.jpg">
@@ -261,7 +257,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="impresora2.jpg">
@@ -276,7 +272,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
                       <img class="activator" src="impresora3.jpg">
@@ -291,7 +287,7 @@ module.exports = yo`
                     </div>
                   </div>
                 </div>
-              </div>      
+              </div>
           </div>        
         </div>
       </section>

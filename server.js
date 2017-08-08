@@ -23,7 +23,7 @@ app.get('/api/footercard', function(req, res){
             
         },
         {
-
+            
         }
     ]
 })

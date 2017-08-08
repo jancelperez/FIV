@@ -6957,3 +6957,31 @@ input:focus {
 
 .fondo {
   height: 150% !important; }
+
+.modal {
+  width: 280px !important;
+  height: 420px !important;
+  border-radius: 10px !important; }
+
+.modal-content {
+  padding: 0 !important; }
+
+.iniciar {
+  background-color: #8ac722 !important;
+  margin-right: 35% !important; }
+
+.cancelar {
+  background-color: #CA1301 !important; }
+
+.bloqueado {
+  padding-left: 35px !important; }
+
+.input-logo {
+  margin-top: 40px !important;
+  margin-bottom: -21px !important; }
+
+.olivido {
+  margin-bottom: 6px !important; }
+
+.password {
+  margin-bottom: 4px !important; }
