@@ -2631,7 +2631,27 @@ page('/', function (ctx, next) {
     var card = [{
         url: 'fotocopiadora1.jpg'
     }, {
+        url: 'scaner1.jpg'
+    }, {
+        url: 'toner1.jpg'
+    }, {
+        url: 'scaner2.jpg'
+    }, {
         url: 'fotocopiadora2.jpg'
+    }, {
+        url: 'toner2.jpg'
+    }, {
+        url: 'toner3.jpg'
+    }, {
+        url: 'scaner3.jpg'
+    }, {
+        url: 'impresora1.jpg'
+    }, {
+        url: 'impresora2.jpg'
+    }, {
+        url: 'impresora3.jpg'
+    }, {
+        url: 'fotocopiadora3.jpg'
     }];
     empty(main).appendChild(plantilla(card));
 });
@@ -2778,186 +2798,6 @@ module.exports = function plantilla(cards) {
                 ${cards.map(function (pic) {
     return card(pic);
   })}
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="fotocopiadora1.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="scaner1.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="toner1.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="scaner2.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="fotocopiadora2.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="toner2.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="toner3.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="scaner3.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="fotocopiadora3.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="impresora1.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="impresora2.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="impresora3.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
-                </div>
               </div>
           </div>        
         </div>

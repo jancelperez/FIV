@@ -8,7 +8,44 @@ page('/', function(ctx, next){
     title('Fotocopiadoras del valle');
     var main = document.getElementById('main-conteiner');
     
-    var card = [{url:'fotocopiadora1.jpg'},{url:'fotocopiadora2.jpg'}]
+    var card = [
+        {
+            url:'fotocopiadora1.jpg'
+        },
+        {
+            url:'scaner1.jpg'
+        },
+        {
+            url:'toner1.jpg'
+        },
+        {
+            url:'scaner2.jpg'
+        },
+        {
+            url:'fotocopiadora2.jpg'
+        },
+        {
+            url:'toner2.jpg'
+        },
+        {
+            url:'toner3.jpg'
+        },
+        {
+            url:'scaner3.jpg'
+        },
+        {
+            url:'impresora1.jpg'
+        },
+        {
+            url:'impresora2.jpg'
+        },
+        {
+            url:'impresora3.jpg'
+        },
+        {
+            url:'fotocopiadora3.jpg'
+        },
+        ]
     empty(main).appendChild(plantilla(card));
 }); 
 
