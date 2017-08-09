@@ -1,7 +1,9 @@
 var yo = require('yo-yo');
-var login = require('../login')
+var login = require('../login');
+var card = require('../card')
 
-module.exports =yo`
+module.exports = function plantilla(cards){
+  return yo`
     <div>
       <header>            
         <div class="navbar-fixed">
@@ -107,6 +109,9 @@ module.exports =yo`
           </div>  
           <div class="container">
               <div class="row">  
+                ${cards.map(function(pic){
+                  return card(pic);
+                })}
                 <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -292,4 +297,4 @@ module.exports =yo`
         </div>
       </section>
     </div>`
-
+}

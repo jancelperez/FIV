@@ -2597,6 +2597,28 @@ module.exports = [
 ]
 
 },{}],17:[function(require,module,exports){
+var yo = require('yo-yo');
+
+module.exports = function (imagen) {
+    return yo`
+                <div class="col s12 m6 l4">
+                    <div class="card small">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="${imagen.url}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>`;
+};
+
+},{"yo-yo":15}],18:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var plantilla = require('./plantilla');
@@ -2605,7 +2627,13 @@ var title = require('title');
 page('/', function (ctx, next) {
     title('Fotocopiadoras del valle');
     var main = document.getElementById('main-conteiner');
-    empty(main).appendChild(plantilla);
+
+    var card = [{
+        url: 'fotocopiadora1.jpg'
+    }, {
+        url: 'fotocopiadora2.jpg'
+    }];
+    empty(main).appendChild(plantilla(card));
 });
 
 $(function () {
@@ -2635,11 +2663,13 @@ $(function () {
     $('.carousel').carousel();
 });
 
-},{"./plantilla":18,"empty-element":3,"page":11,"title":14}],18:[function(require,module,exports){
+},{"./plantilla":19,"empty-element":3,"page":11,"title":14}],19:[function(require,module,exports){
 var yo = require('yo-yo');
 var login = require('../login');
+var card = require('../card');
 
-module.exports = yo`
+module.exports = function plantilla(cards) {
+  return yo`
     <div>
       <header>            
         <div class="navbar-fixed">
@@ -2745,6 +2775,9 @@ module.exports = yo`
           </div>  
           <div class="container">
               <div class="row">  
+                ${cards.map(function (pic) {
+    return card(pic);
+  })}
                 <div class="col s12 m6 l4">
                   <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -2930,15 +2963,16 @@ module.exports = yo`
         </div>
       </section>
     </div>`;
+};
 
-},{"../login":20,"yo-yo":15}],19:[function(require,module,exports){
+},{"../card":17,"../login":21,"yo-yo":15}],20:[function(require,module,exports){
 var page = require('page');
 
 require('./home');
 require('./login');
 page();
 
-},{"./home":17,"./login":20,"page":11}],20:[function(require,module,exports){
+},{"./home":18,"./login":21,"page":11}],21:[function(require,module,exports){
 var yo = require('yo-yo');
 
 module.exports = yo`
@@ -2985,4 +3019,4 @@ module.exports = yo`
     </div>`;
 // <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
 
-},{"yo-yo":15}]},{},[19]);
+},{"yo-yo":15}]},{},[20]);

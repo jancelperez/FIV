@@ -7,7 +7,9 @@ var title = require('title');
 page('/', function(ctx, next){
     title('Fotocopiadoras del valle');
     var main = document.getElementById('main-conteiner');
-    empty(main).appendChild(plantilla);
+    
+    var card = [{url:'fotocopiadora1.jpg'},{url:'fotocopiadora2.jpg'}]
+    empty(main).appendChild(plantilla(card));
 }); 
 
  $(function(){
